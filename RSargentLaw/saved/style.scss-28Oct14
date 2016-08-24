@@ -1,0 +1,390 @@
+/*!
+ * Theme Name: RSargentLaw	
+ * Theme URI: http://ellsworthamerican.com/
+ * Description: Website for Rebecca Sargent Law
+ * Author: Linda 'zig' Speight
+ * Author URI: http://ellsworthamerican.com/
+ * Template: eaboot
+ * Version: 1.0
+ */
+
+/*! IMPORTANT DO NOT REMOVE ---------------------------- */
+@import url('../eaboot/style.css');
+/*! END IMPORTANT DO NOT REMOVE ------------------------ */
+
+/* ===================================================== */
+/* Variables ------------------------------------------- */
+
+// Navbar Linear Gradient Start and Stops
+//$navStartColor: rgb(255, 255, 255);
+//$navStartColor:#d2ca89;
+$dkgreen: #376238;
+$ltgreen: #7a907d;
+$linkcolor: #7a907d;
+$linkHoverColor: #7041ca;
+$navStartColor: $ltgreen;//#093f09; //rgb(236, 221, 118); // rgb(234, 223, 112); // rgb(235, 205, 67); // #E6E68A;
+//$navStopColor: rgb(0, 0, 0);
+$navStopColor: $dkgreen; //#107c10;//rgb(232, 226, 183);// rgb(232, 228, 183);  // rgb(232, 219, 161); //#F2F2C4;
+// Navbar Background Color
+$navBGColor: rgb(0, 0, 0);
+
+// Navbar Link Color
+//$navLinkColor: rgb(0, 255, 0);
+$navLinkColor: rgb(49, 109, 202); // same as title color here. //rgb(4, 49, 118); 
+$topnav-hovercolor: rgb(18,30, 50);
+$topnav-notfocus: #e6e6e6; // unfocus text color.
+$topnav-notfocusBG: white;
+$topnav-focus: #2c0b63;
+$topnav-focusFont: white;
+$topnav-dropcolor: #121e31; // #e6e6e6(grey); // dropdown text color.
+$topnav-dropHoverBGcolor: #999999; // #316dca backgroundcolor when hovering over 
+$topnav-dropHovercolor:white; // text color when hovering over dropdown, default ok.
+$topnav-dropCurrentBG: #7a907d; // #316dca; // color of current menu-item (ie Staff menu)
+$headernavColor: white;
+$headerNavHover: #393939;
+$headerNavActiveBG: #333333;
+$headerNavActiveFont:black;
+$headerNavActiveHoverFont: $ltgreen;
+$headerBGStartColor:rgb(83,45,226);
+$headerBGStopColor:rgb(119,70,214);
+//$topnav-dropBG: white; //
+// Dropdown Caret Color
+$navCaretColor: rgb(255, 255, 255);
+
+// Wrapper Background Color
+$wrapperBGColor: rgb(255, 255, 255);
+
+
+// Body Background Color
+$bodyBGColor: #e6e6e6; //#D2DAE6;  // field color, ie. color behind page.
+
+$logoBGColor: rgb(4, 49, 118);  //#043176
+
+$TitleColor: $ltgreen; //rgb(49, 109, 202);
+
+a:focus {
+  color: $linkcolor;
+}
+ a:hover {
+  color: $linkHoverColor;
+ }
+
+h4 {
+  margin-top: 24px;
+}
+/* End Variables --------------------------------------- */
+/* ===================================================== */
+
+/* ===================================================== */
+/* EA boot sytling 'fixes ' -------------------------------------- */
+
+// want more spacing between end and content...
+article.blog-post-wrapper, article.page-wrapper {
+  margin-left: 5%;//1%;
+  width: 93%;
+}
+section.page-content {
+  img {
+    padding:5px;
+  }
+}
+
+@media (max-width: 767px) { // at phone size
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0px;
+    margin-right: -0px;
+  }
+  aside {
+    padding-left: 1%;
+  }
+}
+#searchform div input#s {
+    width: 85%;
+}
+#wrapper footer div.container {
+  float:left;
+}
+.pull-left {
+  padding-left:1%;
+}
+.pull-right {
+  padding-right:1%;
+}
+
+
+/* end EAboot styling 'fixes' -------------------------------------- */
+/* ===================================================== */
+
+/* ===================================================== */
+/* Customizations -------------------------------------- */
+
+// Body Background
+body {
+  background-color: $bodyBGColor;
+}
+#site-title {
+  visibility: hidden;
+  height: 0px;
+  display: none;
+}
+a {
+  //color:$TitleColor;
+  color: $linkcolor;
+  font-weight: bold;
+}
+ #navigation { // whole header 
+  margin-left: 0px;
+  //height: 356px;
+  filter: none;
+  //background-image: url('images/headerBGSlice.jpg');
+  //background-repeat: repeat-x;
+  background-color: $headerBGStartColor;
+  background-image: -webkit-linear-gradient(top, $headerBGStartColor, $headerBGStopColor);
+  background-image: -moz-linear-gradient(top, $headerBGStartColor, $headerBGStopColor);
+  background-image: linear-gradient(top, $headerBGStartColor, $headerBGStopColor);
+ 
+  #JKSlogo, #JKSStamps, #JKS_flash {
+    //padding-top: 20px;
+    padding-top: 2%;
+  }
+ }
+#top-nav{
+
+}
+#JKS_flash {
+  width: 80%; // attempting to center the flash 
+  padding-left: 10%;
+  padding-bottom:1%;
+}
+@media (max-width: 767px) { // at phone size, smaller padding of body
+  body {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  
+  #JKSStamps {
+    display:none;
+  }
+  #JKSlogo {
+    width: 55%;
+    float: left;
+    padding-left: 3%;
+    padding-bottom: 5%;
+  }
+  #top-nav {
+    width: 45%;
+  }
+}
+.navbar-explain {
+  display: none;
+  float: right;
+  padding-right: 5px;
+  line-height: 24px;
+  font-size: 16px;
+  color: $navLinkColor; 
+}
+@media (max-width:979px) {  // upto tablet size 
+
+  .navbar-explain {
+    display:block;
+    color: $linkcolor;
+  }
+}
+
+
+// Wrapper Background
+#wrapper {
+  background-color: $wrapperBGColor;
+}
+
+#top-nav {
+  /* background-image: url('header.jpg');
+  background-repeat: no-repeat; */
+  // height: 336px;
+  float:right;
+  padding-right: 1%;
+  #menu-main-nav {
+    li {
+      float: none;
+    }
+    li.staffSubMenu ul.sub-menu {
+      margin-left:-99px;
+    }
+    li.resoursesSubMenu ul.sub-menu{
+      margin-left:-60px;
+    }
+  }
+  // try to stop the flashing of header 
+//#menu-main-nav li ul {display: none;}
+//#menu-main-nav li:hover ul {display: block;}
+//#menu-main-nav li ul:hover {display: block;}
+
+
+  .nav-pills > .active > a, .nav-pills > li.current-menu-item > a,
+  //.nav-pills > .active > a:hover,
+  //.nav-pills > li.current-menu-item > a:hover,
+  .nav-pills > .active > a:focus,
+  .nav-pills > li.current-menu-item > a:focus {
+    color: $topnav-focusFont;
+    background-color: $topnav-focus; // $TitleColor; // $topnav-hovercolor; //
+  }
+  .nav-pills a, 
+  .nav-pill > li > a {
+    color: $topnav-notfocus;
+    //background-color: $topnav-notfocusBG;
+  }
+  //.nav > li > a:hover,
+  //.nav > li > a:focus 
+  .nav > li > a:hover {
+    text-decoration: none;
+    //text-shadow: 0 1px 0 white;
+    color:white;
+    background-color: rgb(18,30, 50); // aka #121E32 - blackish
+  }
+  .nav-pills > li > a > .caret {
+    border-top-color: $navCaretColor;
+    border-bottom-color:$navCaretColor;
+  }
+  /* drop down menu from top nav */
+  ul.nav-pills li.dropdown.open ul.dropdown-menu li {
+    //background-color: $topnav-dropBG; // ok as is.
+    a { 
+      color:$topnav-dropcolor; // dk grey
+    }
+    a:hover { 
+      color: $topnav-dropHovercolor; 
+      background-color:$topnav-dropHoverBGcolor;
+      background-image:none; 
+    }
+  }
+  .dropdown-menu > li.current-menu-item > a {
+    background-image:none;
+    background-color:$topnav-dropCurrentBG;
+  }
+}
+#header-nav {
+  // Navbar Tweaks, but just for header nav. (underlogo)
+  .navbar {
+    
+    // Navbar Inner Wrapper
+    .navbar-inner {
+      filter:none;
+      background-color: $navStopColor;
+      background-image: url('gradient-menu.jpg');
+      background-repeat: repeat-x;
+      background-image: -webkit-linear-gradient(top, $navStartColor, $navStopColor);
+      background-image: -moz-linear-gradient(top, $navStartColor, $navStopColor);
+      background-image: linear-gradient(top, $navStartColor, $navStopColor);
+    }
+    
+    // Navbar Link Colors 
+    .nav > li > a {
+       color: $headernavColor;
+       text-shadow: none;
+    }
+    .nav > li > a:hover {
+      color:$headerNavHover;
+      //text-shadow: 0 2px 0 white;
+      //text-shadow: 0 1px 0 $TitleColor;
+    }
+    
+    // Navbar Dropdown Colors
+    .navbar .nav li.dropdown > .dropdown-toggle .caret {
+      // border-top-color: $navCaretColor;
+      // border-bottom-color: $navCaretColor;
+    }
+    .nav li.current-menu-item {
+      a {
+        color: $headerNavActiveFont;
+      }
+      a:hover{
+        color: $headerNavActiveHoverFont;
+      }
+    }
+  }
+}
+
+/* End Customizations ---------------------------------- */
+/* ===================================================== */
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+	// border-top-color: $navCaretColor;
+	// border-bottom-color: $navCaretColor;
+}
+
+.blog-post-header a,  .page-header .page-title , .blog-post-header .project-title{
+  color: $TitleColor;
+}
+
+.blog-post-header p.meta {
+    visibility:hidden;
+}
+
+
+#gmaploc {
+  padding-left: 5%;
+}
+
+.alignright {
+  float:right;
+}
+
+#widget-area_three  { // no using this right now, but leaving incase...
+  div {
+    width:100%;
+    div .menu {
+      float:right;
+      margin-right:3%;
+    }
+  }
+}
+#widget-area_two div {
+  margin-right:3%;
+}
+
+#widget-area_one div {
+  margin-left: 2%;
+}
+
+
+#CF7_contactUs{
+  float:left;
+}
+#ContactUs_locations{
+  float:right;
+  padding-right: 1%;
+}
+#RAddress {
+  padding-top: 10px;
+}
+label.screen-reader-text {
+  display: none;
+  visibility: none;
+  height: 0px;
+}
+/******************************************************************/
+/* print styling */
+@media print {
+  body { background: white; color: black; margin: 0 }
+  a {
+    font-weight: bold;
+  }
+  a[href^=http]:after {
+      content:"";
+  }
+  a[href^="?"]:after {
+      content:"";
+  }
+  #site-title, #top-nav, #header-nav { display: none; height: 0em; visibility: none;}
+ 
+  #content {
+    aside { display:none;}
+  }
+  #navigation div h1#site-title {
+    display:inline;
+  }
+  #widget-area_one { display:none;}
+  #widget-area_three { display:none;}
+}

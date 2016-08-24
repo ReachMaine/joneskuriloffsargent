@@ -1,0 +1,364 @@
+/*
+ * Theme Name: Ellsworth American Bootstrap
+ * Theme URI: http://eaonline.info
+ * Description: Twitter Bootstrap based WordPress theme for the Ellsworth American
+ * Author: Addison Pellerano
+ * Author URI: http://eaonline.info
+ * Version: 1.0
+ * License: Copyright 2013 Ellsworth American
+*/
+
+/* Import Statements ----------------------------------- */
+@import "compass";
+@import "bootstrap";
+@import "bootstrap-responsive";
+@import "partials/settings";
+@import "partials/functions";
+
+/* Navigation Tweaks ----------------------------------- */
+/* ===================================================== */
+
+/* Bottom Static Navbar -------------------------------- */
+#bottom-nav {
+	float: left;
+	width: 100%;
+} /* End Bottom Static Navbar -------------------------- */
+
+
+/* Static Navbar Tweaks -------------------------------- */
+.navbar-static-top {
+  
+  /* Static Navbar Inner ------------------------------- */
+  .navbar-inner {
+        
+    /* Navbar Inner Container -------------------------- */
+    .container {
+      width: auto;
+      
+      /* =============================================== */
+      /* Helps Center the container wrapper in the bar
+      /* without it, it will overflow to the right and
+      /* display anything pulled-right outside of the bar
+      /* =============================================== */
+      
+    }
+  }
+} /* End Static Navbar Tweaks -------------------------- */
+
+/* Navigation Pills Tweaks ---------------------------- */
+ul.nav.nav-pills {
+  padding-top: 18px;
+} /* End Navigation Pills Tweaks ---------------------- */
+
+/* Post Navigation & Pagination ------------------------ */
+nav {
+  
+  /* Post Navigation & Pagination Next & Prev Links ---- */
+  &.wp-prev-next,
+  &.nav-single {
+    
+    /* Next & Prev Link Unordered Lists ---------------- */
+    ul {
+      @extend .pager;
+    }
+  }
+} /* End Post Navigation & Pagination ------------------ */
+
+/* Current Menu Items ---------------------------------- */
+li.current-menu-item {
+  @extend .active;
+} /* End Current Menu Items ---------------------------- */
+
+/* ===================================================== */
+/* End Navigation Tweaks ------------------------------- */
+
+/* Comment Tweaks -------------------------------------- */
+/* ===================================================== */
+
+/* Comments Wrapper ------------------------------------ */
+#comments-wrapper {
+  
+  /* Comments Header ----------------------------------- */
+  .comments-header { 
+  }
+  
+  /* Comments Main Content ----------------------------- */
+  #comments-content {
+    
+    /* Comment List ------------------------------------ */
+    ol.comments-list {
+      padding-left: 1%;
+      list-style-type: none;
+      
+      /* Comment --------------------------------------- */
+      li.comment {
+      padding-top: 1%;
+      padding-bottom: 1%;
+      
+        /* First Comment ------------------------------- */
+        &:first-child {
+          padding-top: 0;
+        }
+        
+        /* Last Comment -------------------------------- */
+        &:last-child {
+          padding-bottom: 0;
+        }
+        
+        /* Comment Body Wrapper ------------------------ */
+        .comment-body {
+          width: 100%;
+          
+          /* Comment Author ---------------------------- */
+          .comment-author {
+            float: left;
+            width: 100%;
+          }
+          
+          /* Comment Meta Data ------------------------- */
+          .comment-meta {
+            width: 100%;
+            float: left;
+            
+            /* Comment Post Date ----------------------- */
+            a {
+              @extend .text-warning;
+            }
+          }
+          
+          /* Comment Content --------------------------- */
+          p {
+          
+          }
+          
+          /* Comment Reply Button ---------------------- */
+          .reply {
+            
+            /* Reply Button Link ----------------------- */
+            a.comment-reply-link {
+              @extend .btn;
+              @extend .btn-inverse;
+              @extend .btn-small;
+            }
+          }
+        }
+      }
+    }
+  }
+} /* End Comments Wrapper ------------------------------ */
+
+/* ===================================================== */
+/* End Comment Tweaks ---------------------------------- */
+
+/* Wrapper Tweaks -------------------------------------- */
+/* ===================================================== */
+
+/* Site Wrapper ---------------------------------------- */
+#wrapper {
+	margin-top: 10px;
+	@extend .container;
+}
+
+/* Header ---------------------------------------------- */
+header#navigation {
+	
+	/* Site Title ---------------------------------------- */
+	h1#site-title {
+	//	padding-left: 1%;
+	}
+}
+
+/* Content Wrapper ------------------------------------- */
+#content {
+  // float: left;
+  padding-top: 20px;
+}
+
+/* Footer ---------------------------------------------- */
+footer {
+  // float: left;
+}
+
+/* ===================================================== */
+/* End Wrapper Tweaks ---------------------------------- */
+
+/* Main Content Area Tweaks ---------------------------- */
+/* ===================================================== */
+
+/* Hero Unit ------------------------------------------- */
+.hero-unit {
+	margin-top: 30px;
+}/* End Hero Unit -------------------------------------- */
+
+/* Articles -------------------------------------------- */
+article {
+	margin-left: 1%;
+	
+	/* Project List View Wrapper ------------------------- */
+	&.project-list-wrapper {
+		width: 100%;
+		float: left;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		
+		/* Project Header ---------------------------------- */
+		.project-list-header {
+			width: 100%;
+			float: left;
+			
+			/* Header Thumbnail ------------------------------ */
+			a.post-thumbnail {
+				@extend .span2;
+				float: left;
+				margin-right: 2%;
+				
+				img {
+					width: 100%;
+					height: auto !important;
+				}
+			}
+			
+			/* Project Title --------------------------------- */
+			.project-list-title {
+				float: left;
+				width: 78%;
+			}
+			
+			/* Project Meta ---------------------------------- */
+			.meta {
+				float: left;
+				width: 78%;
+			}
+			
+			/* Project Content ------------------------------- */
+			.project-content {
+				float: left;
+				width: 78%;
+			}
+		}
+	} /* End Project List View Wrapper ------------------- */
+	
+	
+	/* Project Box View Wrapper -------------------------- */
+	&.project-box-wrapper {
+		// @extend .well;
+		// @extend .well-small;
+		float: left;
+		
+		.project-box-header {
+			
+			a.post-thumbnail {
+				
+				img {
+					width: 100%;
+					height: auto !important;
+				}
+			}
+			
+			h3 {
+				line-height: 32px;
+			}
+		}
+	} /* End Project Box View Wrapper -------------------- */
+	
+	/* Blog Post Wrapper --------------------------------- */
+	&.blog-post-wrapper,
+	&.project-post-wrapper {
+	  width: 100%;
+    float: left;
+
+    /* Blog Post Header -------------------------------- */
+		.blog-post-header,
+		.project-post-header {
+			float: left;
+			width: 100%;
+
+      /* Header Thumbnail ------------------------------ */
+			a.post-thumbnail {
+				float: left;
+				margin-right: 2%;
+				width: 12%;
+			}
+
+      /* Header Post Title ----------------------------- */
+			.blog-post-title,
+			.project-post-title {
+				float: left;
+				width: 86%;
+				margin-top: 0;
+			}
+
+      /* Header Post Meta ------------------------------ */
+			.meta {
+				float: left;
+				width: 86%;
+
+        /* Meta Items ---------------------------------- */
+				time,
+				.author,
+				.category {
+					float: left;
+				}
+
+        /* Meta Category ------------------------------- */
+				.category {
+					width: 100%;
+				}
+			}
+		} /* End Blog Post Header -------------------------- */
+
+    /* Blog Post Content ------------------------------- */
+		.post-content {
+			// @extend .span9;
+			float: left;
+			margin-top: 2%;
+			width: 100%;
+
+      /* Content Paragraph ----------------------------- */
+			p {
+				// width: 100%;
+				// display: block;
+				
+				/* Paragraph Images ---------------------------- */
+				img {
+				  
+				  /* Images Align Left ------------------------- */
+				  &.alignleft {
+				    padding-right: 1%;
+				  }
+				  
+				  /* Images Align Right ------------------------ */
+				  &.alignright {
+				    padding-left: 1%;
+				  }
+				}
+			}
+		} /* End Blog Post Content ------------------------- */
+		
+		/* Blog Post Footer -------------------------------- */
+		.post-footer {
+		  // @extend .span9;
+		  float: left;
+		  margin-top: 1%;
+			width: 100%;
+		  
+		  /* Footer Post Navigation ------------------------ */
+		  .nav-single {
+		    //width: 100%;
+		  }
+		} /* End Blog Post Footer -------------------------- */
+		
+
+    /* Blog Post Horizontal Rule ----------------------- */
+		hr {
+			width: 100%;
+      float: left;
+		}
+		
+	} /* End Blog Post Wrapper --------------------------- */
+
+  
+} /* End Articles -------------------------------------- */
+
+/* ===================================================== */
+/* End Main Content Area Tweaks ------------------------ */

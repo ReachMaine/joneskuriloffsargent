@@ -1,0 +1,10 @@
+
+
+RewriteOptions inherit
+
+# BEGIN WordPress
+
+# END WordPress
+
+
+AddHandler application/x-httpd-php56 .php .php5 .php4 .php3

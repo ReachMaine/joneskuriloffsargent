@@ -1,0 +1,171 @@
+@import url("../eaboot/style.css");
+/*
+ * Theme Name: RSargentLaw	
+ * Theme URI: http://ellsworthamerican.com/
+ * Description: Website for Rebecca Sargent Law
+ * Author: Linda 'zig' Speight
+ * Author URI: http://ellsworthamerican.com/
+ * Template: eaboot
+ * Version: 1.0
+ */
+/* IMPORTANT DO NOT REMOVE ---------------------------- */
+/* END IMPORTANT DO NOT REMOVE ------------------------ */
+/* ===================================================== */
+/* Variables ------------------------------------------- */
+/* End Variables --------------------------------------- */
+/* ===================================================== */
+/* ===================================================== */
+/* EA boot sytling 'fixes ' -------------------------------------- */
+article.blog-post-wrapper, article.page-wrapper {
+  margin-left: 3%;
+}
+
+@media (max-width: 767px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0px;
+    margin-right: -0px;
+  }
+
+  aside {
+    padding-left: 1%;
+  }
+}
+#searchform div input#s {
+  width: 85%;
+}
+
+#wrapper footer div.container {
+  float: left;
+}
+
+.pull-left {
+  padding-left: 1%;
+}
+
+.pull-right {
+  padding-right: 1%;
+}
+
+/* end EAboot styling 'fixes' -------------------------------------- */
+/* ===================================================== */
+/* ===================================================== */
+/* Customizations -------------------------------------- */
+body {
+  background-color: #e6e6e6;
+}
+
+#site-title {
+  visibility: hidden;
+}
+
+a {
+  color: #316dca;
+}
+
+#top-nav, #navigation {
+  background-color: #043176;
+  margin-left: 0px;
+}
+#top-nav .span4, #navigation .span4 {
+  float: left;
+}
+#top-nav .span8, #navigation .span8 {
+  float: right;
+}
+#top-nav .span8 .slideshow .textwidget img, #navigation .span8 .slideshow .textwidget img {
+  float: right;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  #navigation .span8 .slideshow .textwidget img {
+    padding-right: 1%;
+    width: 90%;
+  }
+}
+#wrapper {
+  background-color: white;
+}
+
+#top-nav .nav-pills > .active > a, #top-nav .nav-pills > li.current-menu-item > a,
+#top-nav .nav-pills > .active > a:focus,
+#top-nav .nav-pills > li.current-menu-item > a:focus {
+  color: white;
+  background-color: #316dca;
+}
+#top-nav .nav-pills a,
+#top-nav .nav-pill > li > a {
+  color: #e6e6e6;
+}
+#top-nav .nav > li > a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #121e32;
+}
+
+#header-nav .navbar .navbar-inner {
+  filter: none;
+  background-image: url("menu-back.png");
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(top, #ecdd76, #e8e2b7);
+  background-image: -moz-linear-gradient(top, #ecdd76, #e8e2b7);
+  background-image: linear-gradient(top, #ecdd76, #e8e2b7);
+}
+#header-nav .navbar .nav > li > a {
+  color: #316dca;
+  text-shadow: none;
+}
+#header-nav .navbar .nav > li > a:hover {
+  text-shadow: 0 2px 0 white;
+}
+
+/* End Customizations ---------------------------------- */
+/* ===================================================== */
+.blog-post-header a, .page-header .page-title {
+  color: #316dca;
+}
+
+.blog-post-header p.meta {
+  visibility: hidden;
+}
+
+#gmaploc {
+  padding-left: 5%;
+}
+
+.alignright {
+  float: right;
+}
+
+#widget-area_three div {
+  width: 100%;
+}
+#widget-area_three div div .menu {
+  float: right;
+  margin-right: 3%;
+}
+
+#widget-area_two div {
+  margin-right: 3%;
+}
+
+#widget-area_one div {
+  margin-left: 2%;
+}
+
+#CF7_contactUs {
+  float: left;
+}
+
+#ContactUs_locations {
+  float: right;
+  padding-right: 5%;
+}
