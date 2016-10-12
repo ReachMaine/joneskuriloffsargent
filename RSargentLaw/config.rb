@@ -24,11 +24,11 @@ line_comments = false
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
-require 'fileutils'
-on_stylesheet_saved do |file|
-	if File.exists?(file) && File.basename(file) == "style.css"
-		puts "Moving: #{file}"
-		FileUtils.mv(file, File.dirname(file) + "/../" + File.basename(file))
-		puts "#{file} Moved!"
-	end
-end
+#require 'fileutils'
+#on_stylesheet_saved do |file|
+#	if File.exists?(file) && File.basename(file) == "style.css"
+#		puts "Moving: #{file}"
+#		FileUtils.mv(file, File.dirname(file) + "/../" + File.basename(file))
+#		puts "#{file} Moved!"
+#	end
+#end
