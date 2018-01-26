@@ -71,18 +71,6 @@ section.page-content img {
   padding: 5px;
 }
 
-@media (max-width: 767px) {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom,
-  .navbar-static-top {
-    margin-left: 0px;
-    margin-right: -0px;
-  }
-
-  aside {
-    padding-left: 1%;
-  }
-}
 #searchform div input#s {
   width: 85%;
 }
@@ -130,7 +118,7 @@ a {
 #navigation #LogoOverlay {
   position: absolute;
   width: 30%;
-  bottom: 0;
+  bottom: 20px;
 }
 #navigation #JKSlogo {
   position: absolute;
@@ -156,20 +144,6 @@ a {
   padding-bottom: 1%;
 }
 
-@media (max-width: 767px) {
-  body {
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-
-  #JKSStamps {
-    display: none;
-  }
-
-  #top-nav {
-    width: 45%;
-  }
-}
 .navbar-explain {
   display: none;
   float: right;
@@ -179,20 +153,6 @@ a {
   color: #316dca;
 }
 
-@media (max-width: 979px) {
-  #JKSlogo {
-    display: none;
-  }
-
-  #navigation #LogoOverlay {
-    width: 75%;
-  }
-
-  .navbar-explain {
-    display: block;
-    color: #7a907d;
-  }
-}
 #wrapper {
   background-color: white;
 }
@@ -323,6 +283,47 @@ label.screen-reader-text {
   height: 0px;
 }
 
+/* this should stay at bottom */
+/* styling for different media sizes */
+@media (max-width: 979px) {
+  #JKSlogo {
+    display: none;
+  }
+
+  #navigation #LogoOverlay {
+    width: 60%;
+  }
+
+  .navbar-explain {
+    display: block;
+    color: #7a907d;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  #JKSStamps {
+    display: none;
+  }
+
+  #top-nav {
+    width: 40%;
+  }
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0px;
+    margin-right: -0px;
+  }
+
+  aside {
+    padding-left: 1%;
+  }
+}
 /******************************************************************/
 /* print styling */
 @media print {
