@@ -1,367 +1,56 @@
-/*!
- * Theme Name: RSargentLaw
- * Theme URI: http://ellsworthamerican.com/
- * Description: Website for Rebecca Sargent Law
- * Author: Linda 'zig' Speight
- * Author URI: http://ellsworthamerican.com/
- * Template: eaboot
- * Version: 1.0
- */
-/*! IMPORTANT DO NOT REMOVE ---------------------------- */
-@import url("../eaboot/style.css");
-/*  styling for team member */
-.single-team-member .team-member-thumb {
-  max-width: 300px;
-  float: left;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-.single-team-member .role {
-  font-weight: bold;
-}
+/*
+Error: Invalid CSS after "    width: 29%": expected "{", was ";"
+        on line 142 of J:/Users/Linda/github_websites/joneskuriloffsargent/RSargentLaw/sass/style.scss
 
-/* team-member shortcode sytling 
-*  image on left, text wrap around, border separating 
+137:   background: -moz-linear-gradient(45deg, $headerBGStartColor, $headerBGStopColor); // FF
+138:   background: linear-gradient(45deg, $headerBGStartColor, $headerBGStopColor);
+139:   #LogoOverlay {
+140:     position: absolute;
+141: <<<<<<< HEAD
+142:     width: 29%;
+143:     bottom: 0;
+144: =======
+145:     width: 30%;
+146:     bottom: 20px;
+147: >>>>>>> 7f32b545b9150b021972cf6b4d3badf31cfafcd7
+
+Backtrace:
+J:/Users/Linda/github_websites/joneskuriloffsargent/RSargentLaw/sass/style.scss:142
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:1166:in `expected'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:1096:in `tok!'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:641:in `block'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:635:in `ruleset'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:660:in `block_child'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/scss/parser.rb:42:in `parse'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:252:in `on_change'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:290:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Users/LindaS/Desktop/compass.app.windows.1.29/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:297:in `start_poller'
 */
-.widget .team-members .team-member {
-  clear: both;
-  overflow: auto;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 20px;
-}
-.widget .team-members .team-member figure {
-  max-width: 300px;
-  float: left;
-  margin: 0px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-}
-.widget .team-members .team-member .role {
-  font-weight: bold;
-}
-.widget .team-members .team-member:not(:first-child) {
-  padding-top: 20px;
-}
-
-/*! END IMPORTANT DO NOT REMOVE ------------------------ */
-/* ===================================================== */
-/* Variables ------------------------------------------- */
-a:focus {
-  color: #7a907d;
-}
-
-a:hover {
-  color: #7041ca;
-}
-
-h4 {
-  margin-top: 24px;
-}
-
-/* End Variables --------------------------------------- */
-/* ===================================================== */
-/* ===================================================== */
-/* EA boot sytling 'fixes ' -------------------------------------- */
-article.blog-post-wrapper, article.page-wrapper {
-  margin-left: 5%;
-  width: 93%;
-}
-
-section.page-content img {
-  padding: 5px;
-}
-
-@media (max-width: 767px) {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom,
-  .navbar-static-top {
-    margin-left: 0px;
-    margin-right: -0px;
-  }
-
-  aside {
-    padding-left: 1%;
-  }
-}
-#searchform div input#s {
-  width: 85%;
-}
-
-#wrapper footer div.container {
-  float: left;
-}
-
-.pull-left {
-  padding-left: 1%;
-}
-
-.pull-right {
-  padding-right: 1%;
-}
-
-/* end EAboot styling 'fixes' -------------------------------------- */
-/* ===================================================== */
-/* ===================================================== */
-/* Customizations -------------------------------------- */
-body {
-  background-color: #e6e6e6;
-}
-
-#site-title {
-  visibility: hidden;
-  height: 0px;
-  display: none;
-}
-
-a {
-  color: #7a907d;
-  font-weight: bold;
-}
-
-#navigation {
-  position: relative;
-  margin-left: 0px;
-  filter: none;
-  background: #9bb8d8;
-  background: -webkit-linear-gradient(bottom, right top, #9bb8d8, #dae4f0);
-  background: -moz-linear-gradient(45deg, #9bb8d8, #dae4f0);
-  background: linear-gradient(45deg, #9bb8d8, #dae4f0);
-}
-#navigation #LogoOverlay {
-  position: absolute;
-  width: 29%;
-  bottom: 0;
-}
-#navigation #JKSlogo {
-  left: 20%;
-  bottom: 0px;
-}
-
-#top-nav {
-  margin-left: 0px;
-}
-
-#menu-main-nav {
-  margin-bottom: 0px;
-}
-
-#JKS_flash {
-  width: 80%;
-  padding-left: 10%;
-  padding-bottom: 1%;
-}
-
-@media (max-width: 767px) {
-  body {
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-
-  #JKSStamps {
-    display: none;
-  }
-
-  #top-nav {
-    width: 45%;
-  }
-}
-.navbar-explain {
-  display: none;
-  float: right;
-  padding-right: 5px;
-  line-height: 24px;
-  font-size: 16px;
-  color: #316dca;
-}
-
-@media (max-width: 979px) {
-  #JKSlogo {
-    display: none;
-  }
-
-  #navigation #LogoOverlay {
-    width: 75%;
-  }
-
-  .navbar-explain {
-    display: block;
-    color: #7a907d;
-  }
-}
-#wrapper {
-  background-color: white;
-}
-
-#top-nav {
-  /* background-image: url('header.jpg');
-  background-repeat: no-repeat; */
-  float: right;
-  /* drop down menu from top nav */
-}
-#top-nav #menu-main-nav {
-  padding-right: 18px;
-}
-#top-nav #menu-main-nav li {
-  float: none;
-}
-#top-nav #menu-main-nav li.staffSubMenu ul.sub-menu {
-  margin-left: -99px;
-}
-#top-nav #menu-main-nav li.resoursesSubMenu ul.sub-menu {
-  margin-left: -60px;
-}
-#top-nav .nav-pills > .active > a, #top-nav .nav-pills > li.current-menu-item > a,
-#top-nav .nav-pills > .active > a:focus,
-#top-nav .nav-pills > li.current-menu-item > a:focus {
-  color: white;
-  background-color: #225FA3;
-}
-#top-nav .nav-pills a,
-#top-nav .nav-pill > li > a {
-  color: #225FA3;
-}
-#top-nav .nav > li > a:hover {
-  text-decoration: none;
-  color: white;
-  background-color: #121e32;
-}
-#top-nav .nav-pills > li > a > .caret {
-  border-top-color: white;
-  border-bottom-color: white;
-}
-#top-nav ul.nav-pills li.dropdown.open ul.dropdown-menu li a {
-  color: #121e31;
-}
-#top-nav ul.nav-pills li.dropdown.open ul.dropdown-menu li a:hover {
-  color: white;
-  background-color: #999999;
-  background-image: none;
-}
-#top-nav .dropdown-menu > li.current-menu-item > a {
-  background-image: none;
-  background-color: #7a907d;
-}
-
-#header-nav .navbar .navbar-inner {
-  filter: none;
-  background-color: #376238;
-  background-image: url("gradient-menu.jpg");
-  background-repeat: repeat-x;
-  background-image: -webkit-linear-gradient(top, #7a907d, #376238);
-  background-image: -moz-linear-gradient(top, #7a907d, #376238);
-  background-image: linear-gradient(top, #7a907d, #376238);
-}
-#header-nav .navbar .nav > li > a {
-  color: white;
-  text-shadow: none;
-}
-#header-nav .navbar .nav > li > a:hover {
-  color: #393939;
-}
-#header-nav .navbar .nav li.current-menu-item a {
-  color: black;
-}
-#header-nav .navbar .nav li.current-menu-item a:hover {
-  color: #7a907d;
-}
-
-/* End Customizations ---------------------------------- */
-/* ===================================================== */
-.blog-post-header a, .page-header .page-title, .blog-post-header .project-title {
-  color: #7a907d;
-}
-
-.blog-post-header p.meta {
-  visibility: hidden;
-}
-
-#gmaploc {
-  padding-left: 5%;
-}
-
-.alignright {
-  float: right;
-}
-
-#widget-area_three div {
-  width: 100%;
-}
-#widget-area_three div div .menu {
-  float: right;
-  margin-right: 3%;
-}
-
-#widget-area_two div {
-  margin-right: 3%;
-}
-
-#widget-area_one div {
-  margin-left: 2%;
-}
-
-#CF7_contactUs {
-  float: left;
-}
-
-#ContactUs_locations {
-  float: right;
-  padding-right: 1%;
-}
-
-#RAddress {
-  padding-top: 10px;
-}
-
-label.screen-reader-text {
-  display: none;
-  visibility: none;
-  height: 0px;
-}
-
-#sidebar .widget.widget_text {
-  padding-right: 10px;
-}
-
-/******************************************************************/
-/* print styling */
-@media print {
-  body {
-    background: white;
-    color: black;
-    margin: 0;
-  }
-
-  a {
-    font-weight: bold;
-  }
-
-  a[href^=http]:after {
-    content: "";
-  }
-
-  a[href^="?"]:after {
-    content: "";
-  }
-
-  #site-title, #top-nav, #header-nav {
-    display: none;
-    height: 0em;
-    visibility: none;
-  }
-
-  #content aside {
-    display: none;
-  }
-
-  #navigation div h1#site-title {
-    display: inline;
-  }
-
-  #widget-area_one {
-    display: none;
-  }
-
-  #widget-area_three {
-    display: none;
-  }
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    width: 29%\": expected \"{\", was \";\"\A         on line 142 of J:/Users/Linda/github_websites/joneskuriloffsargent/RSargentLaw/sass/style.scss\A \A 137:   background: -moz-linear-gradient(45deg, $headerBGStartColor, $headerBGStopColor); // FF\A 138:   background: linear-gradient(45deg, $headerBGStartColor, $headerBGStopColor);\A 139:   #LogoOverlay {\A 140:     position: absolute;\A 141: <<<<<<< HEAD\A 142:     width: 29%;\A 143:     bottom: 0;\A 144: =======\A 145:     width: 30%;\A 146:     bottom: 20px;\A 147: >>>>>>> 7f32b545b9150b021972cf6b4d3badf31cfafcd7"; }

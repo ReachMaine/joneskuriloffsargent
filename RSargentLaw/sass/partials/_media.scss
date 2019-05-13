@@ -1,0 +1,45 @@
+/* styling for different media sizes */
+
+@media (max-width:979px) {  // upto tablet size
+
+  #JKSlogo {
+    display: none;
+  }
+  #navigation #LogoOverlay{
+    width: 60%;
+  }
+  .navbar-explain {
+    display:block;
+    color: $linkcolor;
+  }
+}
+
+@media (max-width: 767px) { // at phone size, smaller padding of body
+  body {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  #JKSStamps {
+    display:none;
+  }
+  #JKSlogo {
+    //width: 55%;
+    //float: left;
+    //padding-left: 3%;
+    //padding-bottom: 5%;
+  }
+  #top-nav {
+    width: 40%;
+  }
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0px;
+    margin-right: -0px;
+  }
+  aside {
+    padding-left: 1%;
+  }
+}
