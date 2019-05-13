@@ -1,5 +1,5 @@
 <!doctype html>
-<?php /* 
+<?php /*
  * 22jul15 zig - change header image, take out stamps & JKS_flash
  */ ?>
 <html lang="en">
@@ -9,7 +9,7 @@
 
     <title>
     <?php
-      if (!is_front_page()) : 
+      if (!is_front_page()) :
         echo wp_title(' ', true, 'left'); echo ' | ';
       endif;
 
@@ -59,7 +59,7 @@
     <div id="wrapper">
 
       <?php /* Check if Navbar is enabled */ ?>
-      <?php 
+      <?php
         if (eaboot_option('navbar_on') == 1) :
           if (file_exists(get_template_directory() . '/includes/header_nav.php')) :
             require_once(trailingslashit(get_template_directory()). 'includes/header_nav.php');
@@ -73,12 +73,12 @@
         <?php /* <div id="JKSStamps" class="span4">
           <img src="wp-content/themes/RSargentLaw/images/stamps.png">
         </div> */ ?>
-        
-        <div class="span2"> <?php /* spacing for lawyers */ ?>
+
+        <div class="span3"> <?php /* spacing for lawyers */ ?>
         </div>
         <!-- Logo -->
-        <div id="JKSlogo" class="span8" >
-          <img src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/RSargentLaw/images/lawyers.png">           
+        <div id="JKSlogo" class="span6" >
+          <img src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/RSargentLaw/images/attorneys2.jpg">
         </div>
         <div id="LogoOverlay">
             <a href="<?php echo get_bloginfo('url'); ?>">
@@ -86,8 +86,8 @@
             </a>
         </div>
         <!-- Top Navigation -->
-        <nav id="top-nav" class="span2">
-          <?php wp_nav_menu(array('container' => '', 'menu_class' => 'pull-right nav nav-pills', 'depth' => 0, 'theme_location' => 'top-nav')); ?>  
+        <nav id="top-nav" class="span3">
+          <?php wp_nav_menu(array('container' => '', 'menu_class' => 'pull-right nav nav-pills', 'depth' => 0, 'theme_location' => 'top-nav')); ?>
         </nav>
         <!-- End Top Navigation -->
         <?php /* <div class="row">
@@ -104,9 +104,9 @@
       <!-- Navbar Below Header Content -->
       <?php if (eaboot_option('header_navbar') == 1) : ?>
         <nav id="header-nav">
-          <?php 
+          <?php
             if (file_exists(trailingslashit(get_template_directory()) . 'includes/header_nav.php')) :
-              require_once(trailingslashit(get_template_directory()) . 'includes/header_bar_nav.php'); 
+              require_once(trailingslashit(get_template_directory()) . 'includes/header_bar_nav.php');
             endif;
           ?>
         </nav>

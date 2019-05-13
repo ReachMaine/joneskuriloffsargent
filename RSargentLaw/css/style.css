@@ -1,6 +1,5 @@
-@import url("../eaboot/style.css");
-/*
- * Theme Name: RSargentLaw	
+/*!
+ * Theme Name: RSargentLaw
  * Theme URI: http://ellsworthamerican.com/
  * Description: Website for Rebecca Sargent Law
  * Author: Linda 'zig' Speight
@@ -8,7 +7,8 @@
  * Template: eaboot
  * Version: 1.0
  */
-/* IMPORTANT DO NOT REMOVE ---------------------------- */
+/*! IMPORTANT DO NOT REMOVE ---------------------------- */
+@import url("../eaboot/style.css");
 /*  styling for team member */
 .single-team-member .team-member-thumb {
   max-width: 300px;
@@ -20,6 +20,9 @@
   font-weight: bold;
 }
 
+/* team-member shortcode sytling 
+*  image on left, text wrap around, border separating 
+*/
 .widget .team-members .team-member {
   clear: both;
   overflow: auto;
@@ -40,7 +43,7 @@
   padding-top: 20px;
 }
 
-/* END IMPORTANT DO NOT REMOVE ------------------------ */
+/*! END IMPORTANT DO NOT REMOVE ------------------------ */
 /* ===================================================== */
 /* Variables ------------------------------------------- */
 a:focus {
@@ -126,16 +129,12 @@ a {
 }
 #navigation #LogoOverlay {
   position: absolute;
-  width: 30%;
+  width: 29%;
   bottom: 0;
 }
 #navigation #JKSlogo {
-  position: absolute;
   left: 20%;
   bottom: 0px;
-}
-#navigation #JKSlogo, #navigation #JKSStamps, #navigation #JKS_flash {
-  padding-top: 2%;
 }
 
 #top-nav {
@@ -215,11 +214,11 @@ a {
 #top-nav .nav-pills > .active > a:focus,
 #top-nav .nav-pills > li.current-menu-item > a:focus {
   color: white;
-  background-color: #225fa3;
+  background-color: #225FA3;
 }
 #top-nav .nav-pills a,
 #top-nav .nav-pill > li > a {
-  color: #225fa3;
+  color: #225FA3;
 }
 #top-nav .nav > li > a:hover {
   text-decoration: none;
@@ -317,6 +316,10 @@ label.screen-reader-text {
   display: none;
   visibility: none;
   height: 0px;
+}
+
+#sidebar .widget.widget_text {
+  padding-right: 10px;
 }
 
 /******************************************************************/

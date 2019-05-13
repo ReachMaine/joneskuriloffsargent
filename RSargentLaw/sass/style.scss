@@ -1,5 +1,5 @@
 /*!
- * Theme Name: RSargentLaw	
+ * Theme Name: RSargentLaw
  * Theme URI: http://ellsworthamerican.com/
  * Description: Website for Rebecca Sargent Law
  * Author: Linda 'zig' Speight
@@ -31,14 +31,14 @@ $navBGColor: rgb(0, 0, 0);
 
 // Navbar Link Color
 //$navLinkColor: rgb(0, 255, 0);
-$navLinkColor: rgb(49, 109, 202); // same as title color here. //rgb(4, 49, 118); 
+$navLinkColor: rgb(49, 109, 202); // same as title color here. //rgb(4, 49, 118);
 $topnav-hovercolor: rgb(18,30, 50);
 $topnav-notfocus: #225FA3; // #e6e6e6; // unfocus text color.
 $topnav-notfocusBG: white;
 $topnav-focus: #225FA3; //#2c0b63;
 $topnav-focusFont: white;
 $topnav-dropcolor: #121e31; // #e6e6e6(grey); // dropdown text color.
-$topnav-dropHoverBGcolor: #999999; // #316dca backgroundcolor when hovering over 
+$topnav-dropHoverBGcolor: #999999; // #316dca backgroundcolor when hovering over
 $topnav-dropHovercolor:white; // text color when hovering over dropdown, default ok.
 $topnav-dropCurrentBG: #7a907d; // #316dca; // color of current menu-item (ie Staff menu)
 $headernavColor: white;
@@ -135,7 +135,7 @@ a {
   color: $linkcolor;
   font-weight: bold;
 }
- #navigation { // whole header 
+ #navigation { // whole header
   position: relative; // zig
   margin-left: 0px;
   //height: 356px;
@@ -148,20 +148,20 @@ a {
   background: linear-gradient(45deg, $headerBGStartColor, $headerBGStopColor);
   #LogoOverlay {
     position: absolute;
-    width: 30%;
+    width: 29%;
     bottom: 0;
   }
   #JKSlogo {
     //margin-left: 0px;
     //margin-left: 10px;
-    position: absolute;
+    //position: absolute;
     left: 20%;
     bottom: 0px;
 
   }
   #JKSlogo, #JKSStamps, #JKS_flash {
     //padding-top: 20px;
-    padding-top: 2%;
+    //padding-top: 2%;
   }
  }
 #top-nav{
@@ -172,7 +172,7 @@ a {
   margin-bottom: 0px;
 }
 #JKS_flash {
-  width: 80%; // attempting to center the flash 
+  width: 80%; // attempting to center the flash
   padding-left: 10%;
   padding-bottom:1%;
 }
@@ -181,7 +181,7 @@ a {
     padding-right: 2%;
     padding-left: 2%;
   }
-  
+
   #JKSStamps {
     display:none;
   }
@@ -201,9 +201,9 @@ a {
   padding-right: 5px;
   line-height: 24px;
   font-size: 16px;
-  color: $navLinkColor; 
+  color: $navLinkColor;
 }
-@media (max-width:979px) {  // upto tablet size 
+@media (max-width:979px) {  // upto tablet size
 
   #JKSlogo {
     display: none;
@@ -241,7 +241,7 @@ a {
       margin-left:-60px;
     }
   }
-  // try to stop the flashing of header 
+  // try to stop the flashing of header
 //#menu-main-nav li ul {display: none;}
 //#menu-main-nav li:hover ul {display: block;}
 //#menu-main-nav li ul:hover {display: block;}
@@ -255,13 +255,13 @@ a {
     color: $topnav-focusFont;
     background-color: $topnav-focus; // $TitleColor; // $topnav-hovercolor; //
   }
-  .nav-pills a, 
+  .nav-pills a,
   .nav-pill > li > a {
     color: $topnav-notfocus;
     //background-color: $topnav-notfocusBG;
   }
   //.nav > li > a:hover,
-  //.nav > li > a:focus 
+  //.nav > li > a:focus
   .nav > li > a:hover {
     text-decoration: none;
     //text-shadow: 0 1px 0 white;
@@ -275,13 +275,13 @@ a {
   /* drop down menu from top nav */
   ul.nav-pills li.dropdown.open ul.dropdown-menu li {
     //background-color: $topnav-dropBG; // ok as is.
-    a { 
+    a {
       color:$topnav-dropcolor; // dk grey
     }
-    a:hover { 
-      color: $topnav-dropHovercolor; 
+    a:hover {
+      color: $topnav-dropHovercolor;
       background-color:$topnav-dropHoverBGcolor;
-      background-image:none; 
+      background-image:none;
     }
   }
   .dropdown-menu > li.current-menu-item > a {
@@ -292,7 +292,7 @@ a {
 #header-nav {
   // Navbar Tweaks, but just for header nav. (underlogo)
   .navbar {
-    
+
     // Navbar Inner Wrapper
     .navbar-inner {
       filter:none;
@@ -303,8 +303,8 @@ a {
       background-image: -moz-linear-gradient(top, $navStartColor, $navStopColor);
       background-image: linear-gradient(top, $navStartColor, $navStopColor);
     }
-    
-    // Navbar Link Colors 
+
+    // Navbar Link Colors
     .nav > li > a {
        color: $headernavColor;
        text-shadow: none;
@@ -314,7 +314,7 @@ a {
       //text-shadow: 0 2px 0 white;
       //text-shadow: 0 1px 0 $TitleColor;
     }
-    
+
     // Navbar Dropdown Colors
     .navbar .nav li.dropdown > .dropdown-toggle .caret {
       // border-top-color: $navCaretColor;
@@ -389,6 +389,11 @@ label.screen-reader-text {
   visibility: none;
   height: 0px;
 }
+#sidebar {
+  .widget.widget_text {
+    padding-right: 10px;
+  }
+}
 /******************************************************************/
 /* print styling */
 @media print {
@@ -403,7 +408,7 @@ label.screen-reader-text {
       content:"";
   }
   #site-title, #top-nav, #header-nav { display: none; height: 0em; visibility: none;}
- 
+
   #content {
     aside { display:none;}
   }
