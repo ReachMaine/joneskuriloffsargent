@@ -138,16 +138,16 @@ a {
   background: linear-gradient(45deg, $headerBGStartColor, $headerBGStopColor);
   #LogoOverlay {
     position: absolute;
-    width: 29%;
+    width: 33%;
     bottom: 0;
   }
   #JKSlogo {
     //margin-left: 0px;
     //margin-left: 10px;
     //position: absolute;
-    left: 20%;
-    bottom: 0px;
-
+    //left: 20%;
+    //bottom: 0px;
+    text-align: center;
   }
   #JKSlogo, #JKSStamps, #JKS_flash {
     //padding-top: 20px;

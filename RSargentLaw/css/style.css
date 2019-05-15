@@ -117,12 +117,11 @@ a {
 }
 #navigation #LogoOverlay {
   position: absolute;
-  width: 29%;
+  width: 33%;
   bottom: 0;
 }
 #navigation #JKSlogo {
-  left: 20%;
-  bottom: 0px;
+  text-align: center;
 }
 
 #top-nav {
@@ -326,6 +325,11 @@ label.screen-reader-text {
   }
 }
 /* styling for different media sizes */
+@media (max-width: 1199px) {
+  #JKSlogo {
+    padding-top: 26px;
+  }
+}
 @media (max-width: 979px) {
   #JKSlogo {
     display: none;

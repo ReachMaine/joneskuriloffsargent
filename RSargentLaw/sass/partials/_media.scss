@@ -1,5 +1,9 @@
 /* styling for different media sizes */
-
+@media (max-width:1199px) {
+  #JKSlogo {
+    padding-top: 26px;
+  }
+}
 @media (max-width:979px) {  // upto tablet size
 
   #JKSlogo {

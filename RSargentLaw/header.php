@@ -74,11 +74,11 @@
           <img src="wp-content/themes/RSargentLaw/images/stamps.png">
         </div> */ ?>
 
-        <div class="span3"> <?php /* spacing for lawyers */ ?>
+        <div class="span4"> <?php /* spacing for lawyers */ ?>
         </div>
         <!-- Logo -->
         <div id="JKSlogo" class="span6" >
-          <img src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/RSargentLaw/images/attorneys2.jpg">
+          <img src="<?php echo get_bloginfo('url'); ?>/wp-content/themes/RSargentLaw/images/lawyers.png">
         </div>
         <div id="LogoOverlay">
             <a href="<?php echo get_bloginfo('url'); ?>">
@@ -86,7 +86,7 @@
             </a>
         </div>
         <!-- Top Navigation -->
-        <nav id="top-nav" class="span3">
+        <nav id="top-nav" class="span2">
           <?php wp_nav_menu(array('container' => '', 'menu_class' => 'pull-right nav nav-pills', 'depth' => 0, 'theme_location' => 'top-nav')); ?>
         </nav>
         <!-- End Top Navigation -->
